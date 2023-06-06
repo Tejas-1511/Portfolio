@@ -1,0 +1,303 @@
+/*used for responsiveness*/
+@media screen and (max-width: 1367px) {
+    nav {
+        padding: 0 7vmax;
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    #home section:first-of-type {
+        padding-left: 7vmax;
+    }
+
+    #home section:first-of-type div aside {
+        width: 85%;
+    }
+
+    #work {
+        padding: 8rem 7vmax;
+        height: 110vh;
+    }
+
+    #work section article {
+        height: 20rem;
+        width: 90%;
+    }
+
+    .workItem {
+        padding: 2rem;
+        height: 20rem;
+    }
+
+    .workItem aside p {
+        margin: 1rem;
+    }
+
+    .workItem aside a {
+        margin: 1rem;
+    }
+
+    #services {
+        padding: 7vmax;
+    }
+
+    #services section {
+        height: 90%;
+    }
+
+    #testimonial {
+        padding: 7vmax;
+    }
+
+    #testimonial section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        padding: 0 5vmax;
+    }
+
+    #home {
+        height: 110vh;
+    }
+
+    #home section:first-of-type {
+        padding-left: 5vmax;
+    }
+
+    #home section:first-of-type div h1 {
+        font: 900 3rem Roboto;
+    }
+
+    #home section:first-of-type div aside {
+        width: 100%;
+    }
+
+    #work {
+        padding: 8rem 5vmax;
+    }
+
+    #services {
+        padding: 15vmax 10vmax;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 0 2vmax;
+    }
+
+    nav h2 {
+        font-size: 1.8rem;
+    }
+
+    nav div {
+        gap: 1rem;
+    }
+
+    #home section:first-of-type {
+        padding-left: 2vmax;
+    }
+
+    #home section:first-of-type div div {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    #home section:first-of-type div aside {
+        flex-direction: column;
+    }
+
+    #work {
+        padding: 8rem 0;
+    }
+
+    #work section article {
+        height: 25rem;
+    }
+
+    .workItem {
+        height: 25rem;
+    }
+
+    #services {
+        padding: 13vmax 0;
+        height: 90vh;
+    }
+
+    #testimonial {
+        padding: 0;
+    }
+
+    #testimonial h2 {
+        padding: 3rem;
+        margin-bottom: 0%;
+    }
+
+    #testimonial section {
+        padding: 3rem;
+        height: 45rem;
+        justify-content: space-evenly;
+    }
+
+    #testimonial section article {
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    nav div a {
+        display: none;
+    }
+    .me{
+        display: none;
+    }
+    .navBtn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #home {
+        height: unset;
+        flex-direction: column-reverse;
+    }
+
+    #home section:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home section:first-of-type div {
+        border: none;
+        padding-top: 3rem;
+    }
+
+    #home section:first-of-type div h1 {
+        font: 900 2.5rem Roboto;
+    }
+
+    #home section:first-of-type div aside {
+        align-items: center;
+    }
+
+    #home section:first-of-type div div {
+        flex-direction: column;
+    }
+
+    #home section:first-of-type div article[data-special] {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home section:first-of-type div article[data-special] span {
+        display: block;
+        width: 70%;
+        word-wrap: break-word;
+    }
+
+    #home section:first-of-type div article {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home section:first-of-type div article::after {
+        top: 0;
+        left: 0%;
+    }
+
+    #home section:last-of-type {
+        border: none;
+    }
+
+    #home svg {
+        font-size: 2rem;
+        bottom: 12%;
+    }
+
+    #work section article {
+        width: 100%;
+        height: 30vmax;
+    }
+
+    .workItem {
+        height: 30vmax;
+        box-shadow: 0 0 5px #fef2f2;
+    }
+
+    .workItem aside {
+        padding: 1rem;
+    }
+
+    .workItem aside h3 {
+        margin: 1rem;
+    }
+
+    .workItem aside p {
+        letter-spacing: 0;
+        line-height: unset;
+        margin: 0%;
+        font-size: 0.75rem;
+    }
+
+    .workItem aside a {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.7rem;
+        margin: 1rem;
+    }
+
+
+    .timelineBox::after {
+        left: 31px;
+    }
+
+    .timelineItem {
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+
+    .rightTimeline {
+        left: 0%;
+    }
+
+    .leftTimeline,
+    .rightTimeline::after {
+        left: 15px;
+    }
+
+    #testimonial section {
+        height: unset;
+        gap: 3rem;
+    }
+
+    #testimonial section article {
+        width: 100%;
+        height: 100vw;
+    }
+
+    #services section {
+        margin: 3rem 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .serviceBox1 {
+        grid-column: 1/3;
+        grid-row: unset;
+    }
+
+    .serviceBox4 {
+        grid-column: 1/3;
+    }
+}

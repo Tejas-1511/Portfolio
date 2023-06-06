@@ -1,0 +1,71 @@
+#work {
+    width: 100%;
+    height: 100vh;
+    padding: 8rem 13;
+  }
+  .sect {
+    margin-top: 4rem;
+    width: 100%;
+    height: 60%;
+    background-color: #292b46;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    }
+  aside h3 {
+    font: 700 2.5rem Open Sans;
+    width: fit-content;
+    border-bottom: 1px solid #16161698;
+    padding: 0.5rem;
+    margin: auto;
+  }
+  h2 {
+    font: 700 2.5rem Open Sans;
+    width: fit-content;
+    border-bottom: 1px solid #16161698;
+    padding: 0.5rem;
+    margin: auto;
+  }
+  .art {
+    width: 70%;
+    height: 25vmax;
+  }
+  img {
+    border-radius: 20px;
+    width: 40%;
+    object-fit: cover;
+  }
+  .asides {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  .asides p {
+    letter-spacing: 3px;
+    font-weight: 200;
+    line-height: 90%;
+    margin: 2rem;
+
+  }
+  .asides a {
+    background-color: #f26440;
+    padding: 0.7rem 2rem;
+    margin: 2rem;
+    color: #fff;
+    transition: all 0.5s;
+  }
+   .asides a:hover {
+      background-color: #ad4126;
+    }
+    .workItem {
+        overflow-y: auto;
+        height: 25vmax;
+        width: 95%;
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        padding: 2rem;
+        box-shadow: 0 0 20px 5px #fef2f2;
+        }

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+background-color: #fef2f2;
+overflow-x: hidden;
+}
+.disableBtn{
+    background-color: rgb(237, 237, 237);
+    cursor: not-allowed;
+}

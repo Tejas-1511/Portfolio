@@ -1,0 +1,75 @@
+#timeline {
+    width: 100%;
+    height: 100vh;
+    background-color: #fef2f2;
+  }
+  .timelineBox {
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .timelineBox::after { /*makes lines*/
+    content:"";                  
+    position: absolute;
+    width: 6px;
+    background-color: #292b46; 
+    top: 0%;
+    bottom: 0%;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timelineItem:after { /*makes circles*/
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #fef2f2;
+    border: 4px solid #292b46;
+    top: 45px;
+    border-radius: 50%;
+    z-index: 1; /*so that circles dont overlap line*/
+  }
+  .timelineItem {
+    padding: 1rem 3rem;
+    position: relative;
+    width: 50%;
+  } 
+  .timelineItem div {
+    background-color: #292b46;
+    color: #fef2f2;
+    border-radius: 6px;
+  }
+  .timelineItem:nth-child(odd) {
+    text-align: right;
+  }
+  .timelineItem:nth-child(odd)::after {
+    animation: upanddown 0.3s infinite ease-in alternate;
+  }
+  .timelineItem:nth-child(even) {
+    text-align: left;
+  }
+  .timelineItem:nth-child(even):after {
+    animation: upanddown 0.5s infinite ease-in alternate;
+  }
+  .leftTimeline {
+    left: 0%;
+  }
+  .rightTimeline {
+    left: 50%;
+  }
+  .rightTimeline:after {
+    left: -16px;
+  }
+  @keyframes upanddown {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+  
